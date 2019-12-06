@@ -79,6 +79,7 @@ body {
     overflow : hidden;
     padding-right : 0.5em;
     position : relative;
+    margin-left : 20px;
 }
 .name-job::after{
     content : '';
