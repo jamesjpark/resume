@@ -55,6 +55,7 @@ body {
 .profile-header,
 .profile-section {
     padding-bottom:10%;
+
 }
 
 .profile-section h2{
@@ -102,7 +103,7 @@ body {
 .name-title{
     font-size : 1.8em; /* times 1.5 of the parent class */
     line-height : 0.7;
-    color : deeppink;
+    color : red;
     margin-left : -0.3em;
     position : relative;
     margin-bottom : 40px;
@@ -142,3 +143,26 @@ body {
 .icons a.instagram{background-image : url(images/instaoff.png);}
 .icons a.instagram:hover{background-image : url(images/instaon.png);}
 
+.graph{
+    padding-top : 1em;
+}
+.graph li{
+    background-color : darkgrey;
+    color : #111;
+    padding : 0.5em 1em;
+    margin : 0.4em 0;
+    border-radius : 50px;
+    box-sizing : border-box;
+}
+
+.graph li::before{
+    content : attr(data-levels);
+    float : right;
+
+}
+.graph li[data-levels ="100%"]{width : 100%;}
+.graph li[data-levels ="90%"]{width : 90%;}
+.graph li[data-levels ="80%"]{width : 80%;}
+.graph li[data-levels ="70%"]{width : 70%;}
+.graph li[data-levels ="60%"]{width : 60%;}
+.graph li[data-levels ="50%"]{width : 50%; }
