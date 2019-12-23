@@ -17,9 +17,9 @@
         transform : translateY(-75%);
     }
 }
-
+ 
 /* CSS RESET*/
-body, h1, p, ul, h2,h3,h4{
+body, h1, p, ul, h2,h3,h4, dl, dd{
     margin : 0;
     padding : 0;
 }
@@ -54,13 +54,17 @@ body {
 
 .profile-header,
 .profile-section {
-    padding-bottom:10%;
+    padding-bottom:7%;
 
 }
 
 .profile-section h2{
     border-top : 3px solid;
     color : orangered;
+    position : sticky;
+    top : 0;
+    background-color : #111;
+    box-shadow : 0 0 50px 10px #111;
 }
 
 .name{
@@ -68,8 +72,12 @@ body {
     line-height : 1.5;
     font-style : italic;
     margin-bottom : 40px;
-    margin-left : 60px;
+    margin-left : 40px;
     font-family: 'Roboto Condensed', sans-serif;
+    position : sticky;
+    top : -1.2em;
+    background-color: #111;
+    box-shadow : 0 0 50px 10px #111;
 }
 
 .name-job{
@@ -107,6 +115,7 @@ body {
     margin-left : -0.3em;
     position : relative;
     margin-bottom : 40px;
+    position: relative;
 }
 
 .icons {
@@ -144,25 +153,68 @@ body {
 .icons a.instagram:hover{background-image : url(images/instaon.png);}
 
 .graph{
-    padding-top : 1em;
+    margin-top :7%;
 }
 .graph li{
-    background-color : darkgrey;
+    background: rgb(255,59,59);
+background: linear-gradient(90deg, rgba(255,59,59,1) 0%, rgba(251,160,77,1) 50%, rgba(209,146,66,1) 100%);
     color : #111;
     padding : 0.5em 1em;
     margin : 0.4em 0;
     border-radius : 50px;
     box-sizing : border-box;
+
 }
 
 .graph li::before{
-    content : attr(data-levels);
+    content: attr(data-score);
     float : right;
 
 }
-.graph li[data-levels ="100%"]{width : 100%;}
-.graph li[data-levels ="90%"]{width : 90%;}
-.graph li[data-levels ="80%"]{width : 80%;}
-.graph li[data-levels ="70%"]{width : 70%;}
-.graph li[data-levels ="60%"]{width : 60%;}
-.graph li[data-levels ="50%"]{width : 50%; }
+.graph li[data-score="100%"]{width : 100%;}
+.graph li[data-score="90%"]{width : 90%;}
+.graph li[data-score="80%"]{width : 80%;}
+.graph li[data-score="70%"]{width : 70%;}
+.graph li[data-score="60%"]{width : 60%;}
+.graph li[data-score="50%"]{width : 50%;}
+
+
+.list{
+    margin-top : 5%;
+}
+.list dt{
+    color : orange;
+    float : left;
+    width : 4em;
+
+}
+
+.list dd{
+    overflow : hidden;
+}
+
+.intro{
+    padding-top :5%;
+}
+
+@media ( min-width : 768px) {
+    .portrait{
+        position : fixed;
+        left : 0;
+        top : 0;
+        width : 60vw;
+        height : 100vh;
+        padding : 0;
+        }
+
+        .profile {
+            margin-left : 60vw;
+        }
+        .timeline li{
+            width : 50%;
+
+        }
+        .timeline li:nth-child(even){
+            margin-left : auto;
+        }
+}
