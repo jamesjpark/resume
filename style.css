@@ -19,14 +19,14 @@
 }
  
 /* CSS RESET*/
-body, h1, p, ul, h2,h3,h4, dl, dd{
+body, h1, p, ul, h2,h3,h4,h5, dl, dd{
     margin : 0;
     padding : 0;
 }
 li{
     list-style-type: none;
 }
-h1,h2,h3,h4{
+h1,h2,h3,h4,h5{
     font-size : 100;
     font-weight: normal;
 }
@@ -64,7 +64,7 @@ body {
     position : sticky;
     top : 0;
     background-color : #111;
-    box-shadow : 0 0 50px 10px #111;
+    box-shadow : 0 0 20px 10px #111;
 }
 
 .name{
@@ -152,9 +152,13 @@ body {
 .icons a.instagram{background-image : url(images/instaoff.png);}
 .icons a.instagram:hover{background-image : url(images/instaon.png);}
 
+.course li{
+    margin : 3%;
+}
 .graph{
     margin-top :7%;
 }
+
 .graph li{
     background: rgb(255,59,59);
 background: linear-gradient(90deg, rgba(255,59,59,1) 0%, rgba(251,160,77,1) 50%, rgba(209,146,66,1) 100%);
@@ -178,7 +182,12 @@ background: linear-gradient(90deg, rgba(255,59,59,1) 0%, rgba(251,160,77,1) 50%,
 .graph li[data-score="60%"]{width : 60%;}
 .graph li[data-score="50%"]{width : 50%;}
 
-
+.activity{
+    padding-top : 5%;
+}
+.activity h4{
+    padding : 2%;
+}
 .list{
     margin-top : 5%;
 }
@@ -191,6 +200,11 @@ background: linear-gradient(90deg, rgba(255,59,59,1) 0%, rgba(251,160,77,1) 50%,
 
 .list dd{
     overflow : hidden;
+}
+
+.edu{
+    padding-top : 2%;
+    padding-left : 3%;
 }
 
 .intro{
