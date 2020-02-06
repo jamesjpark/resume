@@ -40,14 +40,18 @@ body {
     background-color: #111;
     color: #999;
 }
-
+.description{
+    color: grey;
+}
 .portrait {
     background-image : url(images/profile1.jpeg);
     background-size : cover;
     background-position : center;
     padding-top : 56.25% /* 16 : 9 비율 */
 }
-
+.myself{
+    font-size : 120%;
+}
 .profile{
     padding: 7%;
 }
@@ -65,6 +69,7 @@ body {
     top : 0;
     background-color : #111;
     box-shadow : 0 0 20px 10px #111;
+    font-size: 25px;
 }
 
 .name{
@@ -154,6 +159,8 @@ body {
 
 .course li{
     margin : 3%;
+    list-style-type: square;
+    margin-left : 7%;
 }
 .graph{
     margin-top :7%;
@@ -182,14 +189,41 @@ background: linear-gradient(90deg, rgba(255,59,59,1) 0%, rgba(251,160,77,1) 50%,
 .graph li[data-score="60%"]{width : 60%;}
 .graph li[data-score="50%"]{width : 50%;}
 
-.activity{
+.experience{
     padding-top : 5%;
+    color : lightgrey;
+    font-size : 20px;
+    
 }
-.activity h4{
-    padding : 2%;
+.title{
+    font-style : italic;
+    font-size : 18px;
+    padding-top : 0.5%;
+    padding-bottom : 0.5%;
+    color : lightgrey;
+}
+.year{
+    font-size : 18px;
+    color : lightgrey;
+    text-align : right;
+    margin-top : -1.25em;
+    padding-bottom : 0.5%;
+    padding-top : 0.5%;
+
+}
+.description li{
+    list-style-type: square;
+    margin : 3%;
+    margin-left : 4%;
+    font-size : 17px;
+
+}
+.description li a{
+    color : lightgrey;
 }
 .list{
     margin-top : 5%;
+    font-size : 17px;
 }
 .list dt{
     color : orange;
@@ -209,6 +243,13 @@ background: linear-gradient(90deg, rgba(255,59,59,1) 0%, rgba(251,160,77,1) 50%,
 
 .intro{
     padding-top :5%;
+}
+.intro h3{
+    color:lightgrey;
+    font-size : 20px;
+}
+.intro h4{
+    font-size : 17px;
 }
 
 @media ( min-width : 768px) {
