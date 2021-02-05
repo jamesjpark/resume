@@ -38,10 +38,10 @@ a{
 
 body {
     background-color: #111;
-    color: #999;
+    color: lightgrey;
 }
 .description{
-    color: grey;
+    color: lightgrey;
 }
 .portrait {
     background-image : url(images/profile1.jpeg);
@@ -191,7 +191,7 @@ background: linear-gradient(90deg, rgba(255,59,59,1) 0%, rgba(251,160,77,1) 50%,
 
 .experience{
     padding-top : 5%;
-    color : lightgrey;
+    color : white;
     font-size : 20px;
     
 }
@@ -200,11 +200,11 @@ background: linear-gradient(90deg, rgba(255,59,59,1) 0%, rgba(251,160,77,1) 50%,
     font-size : 18px;
     padding-top : 0.5%;
     padding-bottom : 0.5%;
-    color : lightgrey;
+    color : white;
 }
 .year{
     font-size : 18px;
-    color : lightgrey;
+    color : white;
     text-align : right;
     margin-top : -1.25em;
     padding-bottom : 0.5%;
@@ -216,10 +216,10 @@ background: linear-gradient(90deg, rgba(255,59,59,1) 0%, rgba(251,160,77,1) 50%,
     margin : 3%;
     margin-left : 4%;
     font-size : 17px;
-
+    
 }
 .description li a{
-    color : lightgrey;
+    color : white;
 }
 .list{
     margin-top : 5%;
@@ -245,7 +245,7 @@ background: linear-gradient(90deg, rgba(255,59,59,1) 0%, rgba(251,160,77,1) 50%,
     padding-top :5%;
 }
 .intro h3{
-    color:lightgrey;
+    color:white;
     font-size : 20px;
 }
 .intro h4{
