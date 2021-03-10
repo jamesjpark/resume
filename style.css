@@ -203,6 +203,9 @@ background: linear-gradient(90deg, rgba(255,59,59,1) 0%, rgba(251,160,77,1) 50%,
     padding-bottom : 0.5%;
     color : white;
 }
+.company{
+    color : orange;
+}
 .year{
     font-size : 18px;
     color : white;
